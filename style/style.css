@@ -1,0 +1,51 @@
+:root {
+    font-family: monospace;
+    font-size: 18pt;
+
+    --fg: #ffefef;
+    --bg: #242526;
+
+    --red: #ff2222;
+    --green: #22ff22;
+    --blue: #2222ff;
+    --yellow: #ffaa00;
+    --magenta: #ee00ff;
+    --aqua: #00ddff;
+    --grey: #c0c0c0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg)
+}
+
+a {color: var(--aqua)}
+a:visited {color:var(--blue)}
+
+.user {color:var(--green)}
+.domain {color:var(--magenta)}
+.command {color:var(--yellow)}
+
+.emph {
+    color: var(--aqua)
+}
+
+#input {
+    border: none;
+    background-color: var(--bg);
+    color: var(--yellow);
+    font-size: 18pt;
+    width: 80vw;
+}
+
+dt {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: var(--green)
+}
+
+dd {color: var(--grey)}
+
+textarea:focus, input:focus{
+    outline: none;
+}
